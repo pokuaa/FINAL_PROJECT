@@ -6,10 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Login - SB Admin</title>
-        <link href="styles.css" rel="stylesheet" />
+        <title>Minister's Details</title>
+        <link href="../Dashboard/css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
+
+
+    
+
     <body class="bg-primary">
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
@@ -18,47 +22,49 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-5">
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Add Member</h3></div>
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Minister's Info</h3></div>
                                     <div class="card-body">
-                                        <form action="Person_add.php" method="post">
+                                        <form action="minister_add.php" method="post">
+                                            <!-- <div class="form-floating mb-3">
+                                                <input class="form-control" id="name" type="id" name = "edu_id" type="text" placeholder="Enter member id" />
+                                                <label for="edu_id">Educational_id</label>
+                                            </div> -->
+
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="Person_id" type="id" name = "Person_id" placeholder="Enter member id" />
-                                                <label for="Person_id">Member_id</label>
+                                                <input class="form-control" id="name" name= "Person_id" type="name" placeholder="Enter first name" />
+                                                <label for="person_id"> Membership ID</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="Fname" name= "Fname" type="name" placeholder="Enter first name" />
-                                                <label for="Firstname">Enter first name</label>
+                                                <input class="form-control" id="name" name = "branch_name" type="name" placeholder="Enter last name" />
+                                                <label for="branch_name">Branch name</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="Lname" name = "Lname" type="name" placeholder="Enter last name" />
-                                                <label for="Lastname">Enter last name</label>
+                                                <input class="form-control" id="hometown" name = "qualification" type="name" placeholder="Enter date of birth" />
+                                                <label for="qualification">Qualification</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="DOB" name = "DOB" type="date" placeholder="Enter date of birth" />
-                                                <label for="DOB">Date of birth</label>
+                                                <input class="form-control" id="place_birth" name = "date_joined" type="date" placeholder="Enter email" />
+                                                <label for="date_joined">Date Joined</label>
                                             </div>
 
+                                            
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="email" name = "email" type="name" placeholder="Enter email" />
-                                                <label for="DOB">Email</label>
+                                                <input class="form-control" id="emergency_contactName" name= "projects_taken" type="name" placeholder="Enter contact" />
+                                                <label for="projects_taken">projects taken</label>
                                             </div>
 
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control" id="phone" name= "phone" type="name" placeholder="Enter contact" />
-                                                <label for="DOB">Contact details</label>
-                                            </div>
 
-                                            <!-- <form action="upload.php" method="post" enctype="multipart/form-data">
-                                                image:
-                                                <input type="file" name="fileToUpload" id="fileToUpload">
-                                                <input type="submit" value="Upload Image" name="submit">
-                                                </form> -->
+
+                                            <!-- <div class="form-floating mb-3">
+                                                <input class="form-control" id="emergency_Contact" name= "employer" type="text" maxlength ="43" placeholder="Enter contact" />
+                                                <label for="employer">employer</label>
+                                            </div> -->
 
                                             <div>
-                                            <input type ="submit" name = "submit" value = "Add member">
+                                            <input type ="submit" name = "submit" value = "Add">
                                             </div>
 
                                         </form>

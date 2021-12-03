@@ -62,7 +62,7 @@
                                     <a class="nav-link" href="../Dashboard/Member.php">Secondary info</a>
                                     <!-- <a class="nav-link" href="layout-sidenav-light.php">Family Life</a> -->
                                     <a class="nav-link" href="../Dashboard/edu.php">Education</a>
-                                    <a class="nav-link" href="layout-sidenav-light.php">Account Details</a>
+                                    <!-- <a class="nav-link" href="../Dashboard/account.php">Account Details</a> -->
                                     <!-- <a class="nav-link" href="layout-sidenav-light.php">Payment Details</a> -->
                                     <!-- <a class="nav-link" href="layout-sidenav-light.php">Church Role</a> -->
                                      
@@ -75,8 +75,8 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="layout-static.php">Leadership</a>
-                                    <a class="nav-link" href="layout-static.php">Ministers</a>
+                                    <a class="nav-link" href="../Dashboard/minister.php">Ministers</a>
+                                    <a class="nav-link" href="../Dashboard/employee.php">Employees</a>
                                 </nav>
                             </div>
 

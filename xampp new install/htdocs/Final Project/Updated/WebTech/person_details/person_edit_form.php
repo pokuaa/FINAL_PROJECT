@@ -1,3 +1,16 @@
+<?php
+ include '../Database/connection.php';
+ if (isset($_GET['id'])){
+    $id = $_GET['id'];
+    $record = mysqli_query($connect, "select * from person where Person_id='$id'");
+
+    $result = mysqli_fetch_array($record);
+    
+ }
+ 
+ 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -20,45 +33,39 @@
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Add Member</h3></div>
                                     <div class="card-body">
-                                        <form action="Person_add.php" method="post">
+                                        <form action="Person_edit.php" method="post">
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="Person_id" type="id" name = "Person_id" placeholder="Enter member id" />
+                                                <input class="form-control" id="Person_id" type="id" name = "Person_id" placeholder="Enter member id" value="<?php echo $result['Person_id'] ?>"/>
                                                 <label for="Person_id">Member_id</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="Fname" name= "Fname" type="name" placeholder="Enter first name" />
+                                                <input class="form-control" id="Fname" name= "Fname" type="name" placeholder="Enter first name" value="<?php echo $result['Fname'] ?>"/>
                                                 <label for="Firstname">Enter first name</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="Lname" name = "Lname" type="name" placeholder="Enter last name" />
+                                                <input class="form-control" id="Lname" name = "Lname" type="name" placeholder="Enter last name" value="<?php echo $result['Lname'] ?>"/>
                                                 <label for="Lastname">Enter last name</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="DOB" name = "DOB" type="date" placeholder="Enter date of birth" />
+                                                <input class="form-control" id="DOB" name = "DOB" type="date" placeholder="Enter date of birth" value="<?php echo $result['DOB'] ?>"/>
                                                 <label for="DOB">Date of birth</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="email" name = "email" type="name" placeholder="Enter email" />
+                                                <input class="form-control" id="email" name = "email" type="name" placeholder="Enter email" value="<?php echo $result['email'] ?>"/>
                                                 <label for="DOB">Email</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="phone" name= "phone" type="name" placeholder="Enter contact" />
+                                                <input class="form-control" id="phone" name= "phone" type="name" placeholder="Enter contact" value="<?php echo $result['phone'] ?>"/>
                                                 <label for="DOB">Contact details</label>
                                             </div>
 
-                                            <!-- <form action="upload.php" method="post" enctype="multipart/form-data">
-                                                image:
-                                                <input type="file" name="fileToUpload" id="fileToUpload">
-                                                <input type="submit" value="Upload Image" name="submit">
-                                                </form> -->
-
                                             <div>
-                                            <input type ="submit" name = "submit" value = "Add member">
+                                            <input type ="submit" name = "edit" value = "Update member">
                                             </div>
 
                                         </form>

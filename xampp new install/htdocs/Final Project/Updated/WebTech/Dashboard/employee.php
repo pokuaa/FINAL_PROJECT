@@ -113,7 +113,7 @@
                         <h1 class="mt-4">Secondary information</h1>
                         <ol class="breadcrumb mb-4">                        
                             <div class="box-header with-border">
-                                            <a href="../Updated_member/Member_form.php" data-toggle="modal" class="btn btn-primary btn-sm btn-flat"><i class="fa fa-plus"></i> New</a>
+                                            <a href="../Employee/employee_form.php" data-toggle="modal" class="btn btn-primary btn-sm btn-flat"><i class="fa fa-plus"></i> New</a>
                                             </div>
                            
                         </ol>
@@ -149,9 +149,7 @@
                                         unset($_SESSION['success']);
                                         }
 
-                                        
-
-
+                                      
                                     ?>
                                     <div class="row">
                                         <div class="col-xs-12">
@@ -160,17 +158,13 @@
                                             <div class="box-body">
                                             <table id="example1" class="table table-bordered">
                                                 <thead>
-                                                <th>edu_id</th>
-                                                <th>Person_id</th>
-                                                <th>Level_education</th>
-                                                <th>current_institution</th>
-                                                <th>occupation</th>
-                                                <th>employment_status</th>
-                                                <th>employer</th>
+                                                <th>Employee_id</th>
+                                                <th>salary</th>
+                                                <th>employment date</th>
                                                 </thead>
                                                 <tbody>
                                                 <?php
-                                                    $sql = "SELECT * FROM education";
+                                                    $sql = "SELECT * FROM Employee";
                                                     $query = mysqli_query($connect,$sql);
                                                     ?>
 
@@ -179,16 +173,13 @@
                                                         while($row = mysqli_fetch_array($query)){
                                                     ?>                    
                                                         <tr>
-                                                        <td><?php echo $row['edu_id']; ?></td>
                                                         <td><?php echo $row['Person_id']; ?></td>
-                                                        <td><?php echo $row['Level_education']; ?></td>
-                                                        <td><?php echo $row['current_institution']; ?></td>
-                                                        <td><?php echo $row['occupation']; ?></td>
-                                                        <td><?php echo $row['employment_status']; ?></td>
-                                                        <td><?php echo $row['employer']; ?></td>
+                                                        <td><?php echo $row['salary']; ?></td>
+                                                        <td><?php echo $row['employment_date']; ?></td>
+                                                       
                                                         <td>
-                                                            <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i> Edit</button>
-                                                            <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i> Delete</button>
+                                                            <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i> Edit</button>                                                        
+                                                            <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i><a href="../Employee/employee_delete.php?id=<?php echo $row['Person_id']?>"> Delete</a></button>
                                                         </td>
                                                         </tr>
                                                     <?php

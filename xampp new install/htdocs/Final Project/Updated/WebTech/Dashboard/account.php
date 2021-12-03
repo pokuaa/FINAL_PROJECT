@@ -110,10 +110,10 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Registered Members</h1>
+                        <h1 class="mt-4">Account Details</h1>
                         <ol class="breadcrumb mb-4">                        
                             <div class="box-header with-border">
-                                            <a href="../person_details/Person_form.php" data-toggle="modal" class="btn btn-primary btn-sm btn-flat"><i class="fa fa-plus"></i> New</a>
+                                            <a href="../Account_Details/account_form.php" data-toggle="modal" class="btn btn-primary btn-sm btn-flat"><i class="fa fa-plus"></i> New</a>
                                             </div>
                            
                         </ol>
@@ -148,6 +148,9 @@
                                         ";
                                         unset($_SESSION['success']);
                                         }
+
+                                        
+                                
                                     ?>
                                     <div class="row">
                                         <div class="col-xs-12">
@@ -156,16 +159,15 @@
                                             <div class="box-body">
                                             <table id="example1" class="table table-bordered">
                                                 <thead>
-                                                <th>Member_id</th>
-                                                <th>First Name</th>
-                                                <th>Last Name</th>
-                                                <th>Date of Birth</th>
-                                                <th>email</th>
-                                                <th>contact details</th>
+                                                <th>account_id</th>
+                                                <th>Person_id</th>
+                                                <th>account_type</th>
+                                                <th>account_description</th>
+                                                
                                                 </thead>
                                                 <tbody>
                                                 <?php
-                                                    $sql = "SELECT * FROM person";
+                                                    $sql = "SELECT * FROM education";
                                                     $query = mysqli_query($connect,$sql);
                                                     ?>
 
@@ -174,13 +176,11 @@
                                                         while($row = mysqli_fetch_array($query)){
                                                     ?>                    
                                                         <tr>
+                                                        <td><?php echo $row['account_id']; ?></td>
                                                         <td><?php echo $row['Person_id']; ?></td>
-                                                        <td><?php echo $row['Fname']; ?></td>
-                                                        <td><?php echo $row['Lname']; ?></td>
-                                                        <td><?php echo $row['DOB']; ?></td>
-                                                        <td><?php echo $row['email']; ?></td>
-                                                        <td><?php echo $row['phone']; ?></td>
-                                                        
+                                                        <td><?php echo $row['account_type']; ?></td>
+                                                        <td><?php echo $row['account_description']; ?></td>
+                                                    
                                                         <td>
                                                             <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i> Edit</button>
                                                             <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i> Delete</button>

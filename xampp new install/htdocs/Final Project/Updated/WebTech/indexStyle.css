@@ -8,10 +8,10 @@
  .main{
     width: 100%;
     background: linear-gradient(to top, rgb(0,0,0,0.5)50%, rgba(0,0,0, 0.5)50%);
-    background-image: url(background2.jpg);
+    background-image: url(background3.jpg);
     background-position: center;
     background-size: cover;
-    height: 109vh;
+    height: 100%;
 
 
  }
@@ -46,6 +46,9 @@
      float: left;
      height: 90px;
      padding-top: 20px;
+     position: absolute;
+     margin: 90px -0.5px 75px 100px;
+     float: right;
     
  }
 
@@ -201,12 +204,12 @@
 }
 
 .form{
-    width: 250px;
+    width: 290px;
     height: 380px;
     background: linear-gradient( to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
     position: absolute;
-    top: -20px;
-    left: 870px;
+    top: 200px;
+    left: 950px;
     border-radius: 10px;
     padding: 25px;
 }
@@ -292,6 +295,47 @@
     padding-bottom: 10px;
     text-align: center;
 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Roboto:wght@400;700&display=swap');
+
+body{
+    background: rgb(27, 27, 27);
+    color: white; 
+    font-family: Roboto;
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
+@media (min-width: 992px){
+    .nav-item{
+        padding: 0 1.5rem;
+    }
+}
+
+.custom-container{
+    background: black url('./assets/abstract.91fe92b5.jpg');
+    background-size: cover;
+}
+
+.card-body{
+    background: rgb(46, 46, 46);
+}
+
+.card{
+    border: none;
+}
+
+.card-body p{
+    color: rgb(160, 160, 160);
+}
+
+.custom-btn{
+    margin-top: 2em;
+    width: 100%;
 }
 
 

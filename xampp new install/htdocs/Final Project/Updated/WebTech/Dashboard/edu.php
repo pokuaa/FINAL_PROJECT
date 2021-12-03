@@ -110,10 +110,10 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Secondary information</h1>
+                        <h1 class="mt-4">Educational background</h1>
                         <ol class="breadcrumb mb-4">                        
                             <div class="box-header with-border">
-                                            <a href="../Updated_member/Member_form.php" data-toggle="modal" class="btn btn-primary btn-sm btn-flat"><i class="fa fa-plus"></i> New</a>
+                                            <a href="../Education/edu_form.php" data-toggle="modal" class="btn btn-primary btn-sm btn-flat"><i class="fa fa-plus"></i> New</a>
                                             </div>
                            
                         </ol>
@@ -188,7 +188,8 @@
                                                         <td><?php echo $row['employer']; ?></td>
                                                         <td>
                                                             <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i> Edit</button>
-                                                            <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i> Delete</button>
+                                                            <!-- <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i> Delete</button> -->
+                                                            <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i><a href="../Education/edu_delete.php?id=<?php echo $row['Person_id']?>"> Delete</a></button>
                                                         </td>
                                                         </tr>
                                                     <?php

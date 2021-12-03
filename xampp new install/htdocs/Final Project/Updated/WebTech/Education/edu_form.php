@@ -7,7 +7,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Updated Member Details</title>
-        <link href="styles.css" rel="stylesheet" />
+        <link href="../Dashboard/css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
 
@@ -23,14 +23,14 @@
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Educational Background</h3></div>
                                     <div class="card-body">
-                                        <form action="Member_add.php" method="post">
+                                        <form action="edu_add.php" method="post">
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="Person_id" type="id" name = "edu_id" placeholder="Enter member id" />
+                                                <input class="form-control" id="name" type="id" name = "edu_id" type="text" placeholder="Enter member id" />
                                                 <label for="edu_id">Educational_id</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="name" name= "person_id" type="name" placeholder="Enter first name" />
+                                                <input class="form-control" id="name" name= "Person_id" type="name" placeholder="Enter first name" />
                                                 <label for="person_id"> Membership ID</label>
                                             </div>
 
@@ -63,7 +63,7 @@
                                             </div>
 
                                             <div>
-                                            <input type ="submit" name = "submit" value = "status">
+                                            <input type ="submit" name = "submit" value = "Add">
                                             </div>
 
                                         </form>

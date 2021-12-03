@@ -6,10 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Login - SB Admin</title>
-        <link href="styles.css" rel="stylesheet" />
+        <title> Member Account Details</title>
+        <link href="../Dashboard/css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
+
+    
     <body class="bg-primary">
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
@@ -18,47 +20,34 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-5">
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Add Member</h3></div>
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Account Details</h3></div>
                                     <div class="card-body">
-                                        <form action="Person_add.php" method="post">
+                                        <form action="account_add.php" method="post">
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="Person_id" type="id" name = "Person_id" placeholder="Enter member id" />
-                                                <label for="Person_id">Member_id</label>
+                                                <input class="form-control" id="name" type="id" name = "account_id" type="text" placeholder="Enter member id" />
+                                                <label for="account_id">account_id</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="Fname" name= "Fname" type="name" placeholder="Enter first name" />
-                                                <label for="Firstname">Enter first name</label>
+                                                <input class="form-control" id="name" type="id" name = "Person_id" type="text" placeholder="Enter member id" />
+                                                <label for="Person_id">Person_id</label>
+                                            </div>
+
+
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" id="name" name= "account_type" type="text" placeholder="Enter first name" />
+                                                <label for="account_type"> account_type </label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="Lname" name = "Lname" type="name" placeholder="Enter last name" />
-                                                <label for="Lastname">Enter last name</label>
+                                                <input class="form-control" id="name" name = "account_description" type="text" placeholder="Enter last name" />
+                                                <label for="account_description">account_description</label>
                                             </div>
 
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control" id="DOB" name = "DOB" type="date" placeholder="Enter date of birth" />
-                                                <label for="DOB">Date of birth</label>
-                                            </div>
-
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control" id="email" name = "email" type="name" placeholder="Enter email" />
-                                                <label for="DOB">Email</label>
-                                            </div>
-
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control" id="phone" name= "phone" type="name" placeholder="Enter contact" />
-                                                <label for="DOB">Contact details</label>
-                                            </div>
-
-                                            <!-- <form action="upload.php" method="post" enctype="multipart/form-data">
-                                                image:
-                                                <input type="file" name="fileToUpload" id="fileToUpload">
-                                                <input type="submit" value="Upload Image" name="submit">
-                                                </form> -->
+                                            
 
                                             <div>
-                                            <input type ="submit" name = "submit" value = "Add member">
+                                            <input type ="submit" name = "submit" value = "Add">
                                             </div>
 
                                         </form>

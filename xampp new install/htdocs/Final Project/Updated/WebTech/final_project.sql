@@ -44,6 +44,16 @@ FOREIGN KEY(Person_id) references Person (Person_id)
 #Select * from Leader_profile;
 
 
+
+
+
+
+
+
+
+
+
+
 CREATE table Employee(
 Person_id char(10) PRIMARY KEY,
 salary decimal,
@@ -65,6 +75,14 @@ place_birth varchar (50),
 hometown varchar (50),
 emergency_contactName varchar (50),
 emergency_Contact varchar (50),
+FOREIGN KEY(Person_id) references Person (Person_id) 
+);
+
+CREATE table account_details(
+account_id varchar (20) NOT NULL PRIMARY KEY,
+Person_id varchar (20) NOT NULL, 
+account_type varchar (50),
+account_description varchar(100),
 FOREIGN KEY(Person_id) references Person (Person_id) 
 );
 
@@ -100,13 +118,7 @@ FOREIGN KEY(Person_id) references Person (Person_id)
 );
 
 
-CREATE table Account_Details(
-account_id varchar (20) NOT NULL PRIMARY KEY,
-Person_id varchar (20) NOT NULL, 
-account_type varchar (50),
-account_description TEXT,
-FOREIGN KEY(Person_id) references Person (Person_id) 
-);
+
 
 
 

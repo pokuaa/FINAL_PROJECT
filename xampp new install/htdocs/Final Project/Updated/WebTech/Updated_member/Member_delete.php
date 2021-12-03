@@ -8,10 +8,10 @@
 		$id = $_GET['id'];
 		
 		
-		$sql = "DELETE FROM person WHERE Person_id='$id'";
+		$sql = "DELETE FROM member WHERE Person_id='$id'";
 		$res = $connect->query($sql);
 		if($connect->query($sql)){
-			echo ("<script> alert('Person deleted successfully'); window.location.href='../Dashboard/layout-static.php'; </script>");
+			echo ("<script> alert('Person deleted successfully'); window.location.href='../Dashboard/Member.php'; </script>");
 			
 		}
 		else{

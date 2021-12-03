@@ -110,10 +110,10 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Secondary information</h1>
+                        <h1 class="mt-4">Minister's Information</h1>
                         <ol class="breadcrumb mb-4">                        
                             <div class="box-header with-border">
-                                            <a href="../Updated_member/Member_form.php" data-toggle="modal" class="btn btn-primary btn-sm btn-flat"><i class="fa fa-plus"></i> New</a>
+                                            <a href="../Minister/minister_form.php" data-toggle="modal" class="btn btn-primary btn-sm btn-flat"><i class="fa fa-plus"></i> New</a>
                                             </div>
                            
                         </ol>
@@ -148,6 +148,8 @@
                                         ";
                                         unset($_SESSION['success']);
                                         }
+
+                            
                                     ?>
                                     <div class="row">
                                         <div class="col-xs-12">
@@ -155,36 +157,35 @@
                                             <div class="card mb-4">
                                             <div class="box-body">
                                             <table id="example1" class="table table-bordered">
-                                                <thead>
-                                                <th>Member_id</th>
-                                                <th>Father's Name</th>
-                                                <th>Mother's Name</th>
-                                                <th>Place Birth</th>
-                                                <th>Hometown</th>
-                                                <th>emergency contact person</th>
-                                                <th>emergency contact</th>
+                                                <thead>                                             
+                                                <th>Person_id</th>
+                                                <th>branch_name</th>
+                                                <th>Qualification</th>
+                                                <th>date Joined</th>
+                                                <th>Projects Taken</th>                                               
                                                 </thead>
                                                 <tbody>
                                                 <?php
-                                                    $sql = "SELECT * FROM member";
+                                                    $sql = "SELECT * FROM MINISTER";
                                                     $query = mysqli_query($connect,$sql);
                                                     ?>
 
                                                     <?php
                                                     $i=0;
                                                         while($row = mysqli_fetch_array($query)){
-                                                    ?>                    
-                                                        <tr>
+                                                    ?>  
+                                                    
+                                                                                                <tr>
                                                         <td><?php echo $row['Person_id']; ?></td>
-                                                        <td><?php echo $row['father_name']; ?></td>
-                                                        <td><?php echo $row['mother_name']; ?></td>
-                                                        <td><?php echo $row['place_birth']; ?></td>
-                                                        <td><?php echo $row['hometown']; ?></td>
-                                                        <td><?php echo $row['emergency_contactName']; ?></td>
-                                                        <td><?php echo $row['emergency_Contact']; ?></td>
+                                                        <td><?php echo $row['branch_name']; ?></td>
+                                                        <td><?php echo $row['qualification']; ?></td>
+                                                        <td><?php echo $row['date_joined']; ?></td>
+                                                     
+                                                        <td><?php echo $row['projects_taken']; ?></td>
                                                         <td>
                                                             <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i> Edit</button>
-                                                            <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i> Delete</button>
+                                                            <!-- <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i> Delete</button> -->
+                                                            <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i><a href="../Minister/minister_delete.php?id=<?php echo $row['Person_id']?>"> Delete</a></button>
                                                         </td>
                                                         </tr>
                                                     <?php

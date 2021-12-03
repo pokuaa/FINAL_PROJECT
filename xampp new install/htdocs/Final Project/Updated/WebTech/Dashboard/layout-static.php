@@ -180,10 +180,20 @@
                                                         <td><?php echo $row['DOB']; ?></td>
                                                         <td><?php echo $row['email']; ?></td>
                                                         <td><?php echo $row['phone']; ?></td>
-                                                        
+
+                                                     
                                                         <td>
-                                                            <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i> Edit</button>
-                                                            <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i> Delete</button>
+                                                            <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i><a href="../person_details/Person_edit_form.php?id=<?php echo $row['Person_id']?>"> Edit</a></button>
+                                                            <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i><a href="../person_details/Person_delete.php?id=<?php echo $row['Person_id']?>"> Delete</a></button>
+                                                            <!-- <button class="btn btn-danger upload btn-sm btn-flat"><i class="fa fa-upload"></i><a href="../person_details/upload.php?id=<?php echo $row['Person_id']?>"> Upload image</a></button> -->
+<!-- 
+                                                               <form action="../person_details/upload.php" method="post" enctype="multipart/form-data">
+                                                                    image:
+                                                                    <input type="file" name="fileToUpload" id="fileToUpload">
+                                                                    <input type="submit" value="Upload Image" name="submit">
+                                                               </form> -->
+                                                        
+                                                        </td>
                                                         </td>
                                                         </tr>
                                                     <?php
