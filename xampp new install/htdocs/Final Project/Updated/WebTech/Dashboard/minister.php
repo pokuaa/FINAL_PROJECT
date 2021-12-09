@@ -183,7 +183,7 @@
                                                      
                                                         <td><?php echo $row['projects_taken']; ?></td>
                                                         <td>
-                                                            <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i> Edit</button>
+                                                        <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i><a href="../Minister/minister_edit_form.php?id=<?php echo $row['Person_id']?>"> Edit</a></button>
                                                             <!-- <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i> Delete</button> -->
                                                             <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i><a href="../Minister/minister_delete.php?id=<?php echo $row['Person_id']?>"> Delete</a></button>
                                                         </td>

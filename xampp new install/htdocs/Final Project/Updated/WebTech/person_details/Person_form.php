@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Login - SB Admin</title>
+        <title>Membership of Dominion</title>
         <link href="styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
@@ -22,82 +22,56 @@
                                     <div class="card-body">
                                         <form action="Person_add.php" method="post">
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="Person_id" type="id" name = "Person_id" placeholder="Enter member id" />
+                                                <input class="form-control" id="Person_id" type="id" name = "Person_id" placeholder="Enter member id" required />
                                                 <label for="Person_id">Member_id</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="Fname" name= "Fname" type="name" placeholder="Enter first name" />
+                                                <input class="form-control" id="Fname" name= "Fname" type="name" placeholder="Enter first name" required />
                                                 <label for="Firstname">Enter first name</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="Lname" name = "Lname" type="name" placeholder="Enter last name" />
+                                                <input class="form-control" id="Lname" name = "Lname" type="name" placeholder="Enter last name" required />
                                                 <label for="Lastname">Enter last name</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="DOB" name = "DOB" type="date" placeholder="Enter date of birth" />
+                                                <input class="form-control" id="DOB" name = "DOB" type="date" placeholder="Enter date of birth" required/>
                                                 <label for="DOB">Date of birth</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="email" name = "email" type="name" placeholder="Enter email" />
+                                                <input class="form-control" id="email" name = "email" type="name" placeholder="Enter email" required/>
                                                 <label for="DOB">Email</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="phone" name= "phone" type="name" placeholder="Enter contact" />
+                                                <input class="form-control" id="phone" name= "phone" type="name" placeholder="Enter contact" required/>
                                                 <label for="DOB">Contact details</label>
                                             </div>
 
-                                            <!-- <form action="upload.php" method="post" enctype="multipart/form-data">
-                                                image:
-                                                <input type="file" name="fileToUpload" id="fileToUpload">
-                                                <input type="submit" value="Upload Image" name="submit">
-                                                </form> -->
+                                            <form action ="../person_details/upload.php" method="post" enctype="multipart/form-data">
+                                                                    image:
+                                                                    <input type="file" name="fileToUpload" id="fileToUpload" name="submit">
+                                                                     <input type="submit" value="Upload Image" name="submit">
+                                                               </form> 
 
                                             <div>
                                             <input type ="submit" name = "submit" value = "Add member">
                                             </div>
 
                                         </form>
-
-                                            
-                                         
-
-
-                                            <!-- <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a class="small" href="password.html">Forgot Password?</a>
-                                                <a class="btn btn-primary" href="index.html">Login</a>
-                                            </div> -->
+                                                                                                     
                                         </form>
                                     </div>
-                                    <!-- <div class="card-footer text-center py-3">
-                                        <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
-                                    </div> -->
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </main>
             </div>
-            <!-- <div id="layoutAuthentication_footer">
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2021</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script> -->
+           
     </body>
 </html>

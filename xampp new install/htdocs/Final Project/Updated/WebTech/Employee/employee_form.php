@@ -26,21 +26,21 @@
                                         <form action="employee_add.php" method="post">
                                            
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="name" name= "Person_id" type="name" placeholder="Enter first name" />
+                                                <input class="form-control" id="name" name= "Person_id" type="name" placeholder="Enter first name" required />
                                                 <label for="person_id"> Membership ID</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="name" name = "salary" type="integer" placeholder="Enter last name" />
+                                                <input class="form-control" id="name" name = "salary" type="integer" placeholder="Enter last name" required/>
                                                 <label for="salary">salary</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="hometown" name = "employment_date" type="date" placeholder="Enter date of birth" />
+                                                <input class="form-control" id="hometown" name = "employment_date" type="date" placeholder="Enter date of birth" required/>
                                                 <label for="employment_date">employment_date</label>
                                             </div>
 
-                                                                                <div>
+                                            <div>
                                             <input type ="submit" name = "submit" value = "Add">
                                             </div>
 
@@ -50,37 +50,16 @@
                                          
 
 
-                                            <!-- <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a class="small" href="password.html">Forgot Password?</a>
-                                                <a class="btn btn-primary" href="index.html">Login</a>
-                                            </div> -->
+                                           
                                         </form>
                                     </div>
-                                    <!-- <div class="card-footer text-center py-3">
-                                        <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
-                                    </div> -->
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </main>
             </div>
-            <!-- <div id="layoutAuthentication_footer">
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2021</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script> -->
+            
     </body>
 </html>

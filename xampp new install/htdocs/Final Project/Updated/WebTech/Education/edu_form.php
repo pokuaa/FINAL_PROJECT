@@ -25,40 +25,40 @@
                                     <div class="card-body">
                                         <form action="edu_add.php" method="post">
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="name" type="id" name = "edu_id" type="text" placeholder="Enter member id" />
+                                                <input class="form-control" id="name" type="id" name = "edu_id" type="text" placeholder="Enter member id" required />
                                                 <label for="edu_id">Educational_id</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="name" name= "Person_id" type="name" placeholder="Enter first name" />
+                                                <input class="form-control" id="name" name= "Person_id" type="name" placeholder="Enter first name" required />
                                                 <label for="person_id"> Membership ID</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="name" name = "Level_education" type="name" placeholder="Enter last name" />
+                                                <input class="form-control" id="name" name = "Level_education" type="name" placeholder="Enter last name" required />
                                                 <label for="Level_education">Level education</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="hometown" name = "current_institution" type="name" placeholder="Enter date of birth" />
+                                                <input class="form-control" id="hometown" name = "current_institution" type="name" placeholder="Enter date of birth" required />
                                                 <label for="current_institution">current_institution</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="place_birth" name = "occupation" type="name" placeholder="Enter email" />
+                                                <input class="form-control" id="place_birth" name = "occupation" type="name" placeholder="Enter email" required />
                                                 <label for="occupation">occupation</label>
                                             </div>
 
                                             
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="emergency_contactName" name= "employment_status" type="name" placeholder="Enter contact" />
+                                                <input class="form-control" id="emergency_contactName" name= "employment_status" type="name" placeholder="Enter contact" required />
                                                 <label for="employment_status">employment_status</label>
                                             </div>
 
 
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="emergency_Contact" name= "employer" type="text" maxlength ="43" placeholder="Enter contact" />
+                                                <input class="form-control" id="emergency_Contact" name= "employer" type="text" maxlength ="43" placeholder="Enter contact" required/>
                                                 <label for="employer">employer</label>
                                             </div>
 
@@ -72,37 +72,16 @@
                                          
 
 
-                                            <!-- <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a class="small" href="password.html">Forgot Password?</a>
-                                                <a class="btn btn-primary" href="index.html">Login</a>
-                                            </div> -->
+                                           
                                         </form>
                                     </div>
-                                    <!-- <div class="card-footer text-center py-3">
-                                        <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
-                                    </div> -->
+           
                                 </div>
                             </div>
                         </div>
                     </div>
                 </main>
             </div>
-            <!-- <div id="layoutAuthentication_footer">
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2021</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script> -->
+            
     </body>
 </html>

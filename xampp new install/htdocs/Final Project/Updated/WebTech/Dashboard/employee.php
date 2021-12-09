@@ -19,8 +19,10 @@
             <!-- Navbar Search-->
             <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                 <div class="input-group">
-                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                 <form method = "POST" action = "reach.php" >
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch"/>
+                    <!-- <input type = "submit" name = "submit" value = "search"> -->
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button" name = "submit" value = "search"><i class="fas fa-search"></i></button>
                 </div>
             </form>
             <!-- Navbar-->
@@ -43,8 +45,7 @@
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading" ><a href="index.php">Back</a></div>
                             <a class="nav-link" href="index.php">
-                                <!-- <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                             -->
+                               
                                 
                             </a>
                             <div class="sb-sidenav-menu-heading">Interface</div>
@@ -178,7 +179,7 @@
                                                         <td><?php echo $row['employment_date']; ?></td>
                                                        
                                                         <td>
-                                                            <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i> Edit</button>                                                        
+                                                            <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i><a href="../Employee/employee_edit_form.php?id=<?php echo $row['Person_id']?>"> Edit</a></button>                                                       
                                                             <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i><a href="../Employee/employee_delete.php?id=<?php echo $row['Person_id']?>"> Delete</a></button>
                                                         </td>
                                                         </tr>
@@ -228,14 +229,7 @@
                                     return $(this).text();
 
                                     });
-                                //     console.log(data);
-
-                                //     $('#update_id').val(data[0]);
-                                //     $('#edit_blood_group').val(data[1]);
-                                //     $('#edit_blood_cell').val(data[2]);
-                                //     $('#edit_blood_description').val(data[3]);
-                                // });
-                                });
+                                
                                 </script>
 
 

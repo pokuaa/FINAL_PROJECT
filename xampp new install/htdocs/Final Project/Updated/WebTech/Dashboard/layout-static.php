@@ -19,8 +19,11 @@
             <!-- Navbar Search-->
             <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                 <div class="input-group">
-                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                <form method = "POST" action = "reach.php" >
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" name = "searchBox" value = "<?php
+	                echo $_SESSION['searchBox'] ?? "" ?>"  />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button" name = "submit"><i class="fas fa-search"></i></button>
+            </form>
                 </div>
             </form>
             <!-- Navbar-->
@@ -185,7 +188,7 @@
                                                         <td>
                                                             <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i><a href="../person_details/Person_edit_form.php?id=<?php echo $row['Person_id']?>"> Edit</a></button>
                                                             <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i><a href="../person_details/Person_delete.php?id=<?php echo $row['Person_id']?>"> Delete</a></button>
-                                                            <!-- <button class="btn btn-danger upload btn-sm btn-flat"><i class="fa fa-upload"></i><a href="../person_details/upload.php?id=<?php echo $row['Person_id']?>"> Upload image</a></button> -->
+                                                       
 <!-- 
                                                                <form action="../person_details/upload.php" method="post" enctype="multipart/form-data">
                                                                     image:

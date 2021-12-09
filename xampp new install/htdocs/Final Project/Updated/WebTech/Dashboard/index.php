@@ -46,7 +46,7 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="index.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
@@ -60,11 +60,8 @@
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="layout-static.php">Members</a>
                                     <a class="nav-link" href="../Dashboard/Member.php">Secondary info</a>
-                                    <!-- <a class="nav-link" href="layout-sidenav-light.php">Family Life</a> -->
                                     <a class="nav-link" href="../Dashboard/edu.php">Education</a>
-                                    <!-- <a class="nav-link" href="../Dashboard/account.php">Account Details</a> -->
-                                    <!-- <a class="nav-link" href="layout-sidenav-light.php">Payment Details</a> -->
-                                    <!-- <a class="nav-link" href="layout-sidenav-light.php">Church Role</a> -->
+                                    
                                      
                                 </nav>
                             </div>
@@ -87,7 +84,7 @@
                                             <a class="nav-link" href="password.html">Forgot Password</a>
                                         </nav>
                                     </div>
-                                    <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
                                         Branch Details
                                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                     </a>
@@ -97,7 +94,7 @@
                                             <a class="nav-link" href="404.html">Address</a>
                                             <a class="nav-link" href="500.html">Branch</a>
                                         </nav>
-                                    </div> -->
+                                    </div>
                                 </nav>
                             </div>
                         
@@ -115,6 +112,7 @@
                           <!-- Main content -->
                             <section class="content">
                             <?php
+                                            
                                 if(isset($_SESSION['error'])){
                                 echo "
                                     <div class='alert alert-danger alert-dismissible'>
@@ -142,8 +140,10 @@
                                 <div class="card bg-danger text-white mb-4">
                                     
                                     <div class="card-body"> Membership</div>
+                                   
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                
+                                            <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
@@ -151,6 +151,10 @@
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-warning text-white mb-4">
                                     <div class="card-body">Total Females</div>
+
+                                   
+
+                                    </p>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>

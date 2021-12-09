@@ -183,7 +183,8 @@
                                                         <td><?php echo $row['emergency_contactName']; ?></td>
                                                         <td><?php echo $row['emergency_Contact']; ?></td>
                                                         <td>
-                                                            <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i> Edit</button>                                                        
+                                                        <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i><a href="../Updated_member/Member_edit_form.php?id=<?php echo $row['Person_id']?>"> Edit</a></button>
+                                                            <!-- <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i> Edit</button>                                                         -->
                                                             <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i><a href="../Updated_member/Member_delete.php?id=<?php echo $row['Person_id']?>"> Delete</a></button>
                                                         </td>
                                                         </tr>

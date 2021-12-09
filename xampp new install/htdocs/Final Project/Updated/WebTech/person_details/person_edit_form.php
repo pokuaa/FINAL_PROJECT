@@ -35,32 +35,32 @@
                                     <div class="card-body">
                                         <form action="Person_edit.php" method="post">
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="Person_id" type="id" name = "Person_id" placeholder="Enter member id" value="<?php echo $result['Person_id'] ?>"/>
+                                                <input class="form-control" id="Person_id" type="id" name = "Person_id" placeholder="Enter member id" value="<?php echo $result['Person_id'] ?>" required/>
                                                 <label for="Person_id">Member_id</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="Fname" name= "Fname" type="name" placeholder="Enter first name" value="<?php echo $result['Fname'] ?>"/>
+                                                <input class="form-control" id="Fname" name= "Fname" type="name" placeholder="Enter first name" value="<?php echo $result['Fname'] ?>" required/>
                                                 <label for="Firstname">Enter first name</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="Lname" name = "Lname" type="name" placeholder="Enter last name" value="<?php echo $result['Lname'] ?>"/>
+                                                <input class="form-control" id="Lname" name = "Lname" type="name" placeholder="Enter last name" value="<?php echo $result['Lname'] ?>"required/>
                                                 <label for="Lastname">Enter last name</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="DOB" name = "DOB" type="date" placeholder="Enter date of birth" value="<?php echo $result['DOB'] ?>"/>
+                                                <input class="form-control" id="DOB" name = "DOB" type="date" placeholder="Enter date of birth" value="<?php echo $result['DOB'] ?>" required/>
                                                 <label for="DOB">Date of birth</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="email" name = "email" type="name" placeholder="Enter email" value="<?php echo $result['email'] ?>"/>
+                                                <input class="form-control" id="email" name = "email" type="name" placeholder="Enter email" value="<?php echo $result['email'] ?>" required/>
                                                 <label for="DOB">Email</label>
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="phone" name= "phone" type="name" placeholder="Enter contact" value="<?php echo $result['phone'] ?>"/>
+                                                <input class="form-control" id="phone" name= "phone" type="name" placeholder="Enter contact" value="<?php echo $result['phone'] ?>" required/>
                                                 <label for="DOB">Contact details</label>
                                             </div>
 
@@ -74,37 +74,16 @@
                                          
 
 
-                                            <!-- <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a class="small" href="password.html">Forgot Password?</a>
-                                                <a class="btn btn-primary" href="index.html">Login</a>
-                                            </div> -->
+                                            
                                         </form>
                                     </div>
-                                    <!-- <div class="card-footer text-center py-3">
-                                        <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
-                                    </div> -->
+                                
                                 </div>
                             </div>
                         </div>
                     </div>
                 </main>
             </div>
-            <!-- <div id="layoutAuthentication_footer">
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2021</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script> -->
+           
     </body>
 </html>
