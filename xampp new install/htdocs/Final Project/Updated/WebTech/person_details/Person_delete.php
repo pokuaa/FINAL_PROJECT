@@ -7,8 +7,8 @@
 		
 		$id = $_GET['id'];
 		
-		
-		$sql = "DELETE FROM person WHERE Person_id='$id'";
+		//sql query to delete from person table
+		$sql = "DELETE FROM PERSON WHERE Person_id='$id'";
 		$res = $connect->query($sql);
 		if($connect->query($sql)){
 			echo ("<script> alert('Person deleted successfully'); window.location.href='../Dashboard/layout-static.php'; </script>");

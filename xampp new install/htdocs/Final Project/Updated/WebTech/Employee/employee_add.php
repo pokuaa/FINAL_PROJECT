@@ -9,32 +9,8 @@
 		$employment_date = $_POST['employment_date'];
         
 
-	
-
-	
-		$sql = "INSERT INTO Employee
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		 (Person_id,salary,employment_date) VALUES 
+		//sql query to insert into Employee tables
+		$sql = "INSERT INTO Employee (Person_id,salary,employment_date) VALUES 
 					('$Person_id', '$salary','$employment_date')";
 		if($connect->query($sql)){
 			echo 'Employee added successfully';

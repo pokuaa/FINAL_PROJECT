@@ -12,7 +12,7 @@
 		$emergency_Contact = $_POST['emergency_Contact'];
 
 
-		
+		//sql query to insert member table
 		$sql = "INSERT INTO member (Person_id,mother_name,father_name,place_birth,hometown,emergency_contactName,emergency_Contact) VALUES 
 					('$Person_id', '$mother_name ', '$father_name','$place_birth', '$hometown','$emergency_contactName','$emergency_Contact')";
 		if($connect->query($sql)){

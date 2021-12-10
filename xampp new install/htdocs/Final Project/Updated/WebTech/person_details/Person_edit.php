@@ -13,6 +13,7 @@
 		$Contact = $_POST['phone'];
     
 		
+		//sql query to update person table
 		$sql = "UPDATE person SET Person_id = '$Person_id', Fname = '$Firstname', Lname = '$Lastname', DOB = '$Date_of_birth', email = '$email', phone = '$Contact' WHERE Person_id = '$Person_id'";
 		if($connect->query($sql)){
 			$_SESSION['success'] = 'Member updated successfully';

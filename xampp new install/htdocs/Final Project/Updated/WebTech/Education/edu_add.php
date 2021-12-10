@@ -2,6 +2,7 @@
 	require '../Database/connection.php';
 	//require '../Updated_member/Member_form.php';
 
+	// performs a function when the submit button is clicked
 	if(isset($_POST['submit'])){
         $edu_id = $_POST['edu_id'];
 		$Person_id = $_POST['Person_id'];
@@ -12,6 +13,8 @@
 		$employer = $_POST['employer'];
 
 		echo $edu_id;
+
+		// inserts value into education table
 		$sql = "INSERT INTO Education (edu_id,Person_id,Level_education,current_institution,occupation,employment_status,employer) VALUES 
 					('$edu_id', '$Person_id', '$Level_education','$current_institution', '$occupation','$employment_status','$employer')";
 		if($connect->query($sql)){

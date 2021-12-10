@@ -10,7 +10,7 @@
         $email = $_POST['email'];
 		$Contact = $_POST['phone'];
 
-		
+		//sql query to insert into person table
 		$sql = "INSERT INTO person (Person_id,Fname,Lname,DOB,email,phone) VALUES 
 					('$Person_id', '$Firstname', '$Lastname', '$Date_of_birth','$email', '$Contact' )";
 		if($connect->query($sql)){

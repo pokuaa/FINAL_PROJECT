@@ -13,7 +13,7 @@
 		$employment_status = $_POST['employment_status'];
 		$employer = $_POST['employer'];
     
-		
+		//sql query to update Education form 
 		$sql = "UPDATE Education SET edu_id = '$edu_id', Person_id = '$Person_id', Level_education = '$Level_education', current_institution = '$current_institution', occupation = '$occupation' employment_status = '$employment_status' employer = '$employer'  WHERE Person_id = '$Person_id'";
 		if($connect->query($sql)){
 			$_SESSION['success'] = 'Member updated successfully';

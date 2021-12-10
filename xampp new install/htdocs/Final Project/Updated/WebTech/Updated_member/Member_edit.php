@@ -12,7 +12,7 @@
 		$emergency_Contact = $_POST['emergency_Contact'];
 
 
-		
+		//sql query to update into member table
 		$sql = "UPDATE member SET Person_id = '$Person_id', mother_name = '$mother_name', father_name = '$father_name',place_birth = '$place_birth', hometown = '$hometown', emergency_contactName = '$emergency_contactName', emergency_Contact = '$emergency_Contact' WHERE Person_id = '$Person_id'";
 		if($connect->query($sql)){
 			$_SESSION['success'] = 'Member updated successfully';

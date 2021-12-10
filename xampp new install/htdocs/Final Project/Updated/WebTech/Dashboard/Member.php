@@ -183,9 +183,8 @@
                                                         <td><?php echo $row['emergency_contactName']; ?></td>
                                                         <td><?php echo $row['emergency_Contact']; ?></td>
                                                         <td>
-                                                        <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i><a href="../Updated_member/Member_edit_form.php?id=<?php echo $row['Person_id']?>"> Edit</a></button>
-                                                            <!-- <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i> Edit</button>                                                         -->
-                                                            <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i><a href="../Updated_member/Member_delete.php?id=<?php echo $row['Person_id']?>"> Delete</a></button>
+                                                        <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i><a style="color: white;" href="../Updated_member/Member_edit_form.php?id=<?php echo $row['Person_id']?>"> Edit</a></button>
+                                                        <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i><a style="color: white;" href="../Updated_member/Member_delete.php?id=<?php echo $row['Person_id']?>"> Delete</a></button>
                                                         </td>
                                                         </tr>
                                                     <?php
@@ -234,13 +233,7 @@
                                     return $(this).text();
 
                                     });
-                                //     console.log(data);
-
-                                //     $('#update_id').val(data[0]);
-                                //     $('#edit_blood_group').val(data[1]);
-                                //     $('#edit_blood_cell').val(data[2]);
-                                //     $('#edit_blood_description').val(data[3]);
-                                // });
+                         
                                 });
                                 </script>
 

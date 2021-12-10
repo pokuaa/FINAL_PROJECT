@@ -20,7 +20,7 @@
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Add Member</h3></div>
                                     <div class="card-body">
-                                        <form action="Person_add.php" method="post">
+                                        <form action="Person_add.php" onsubmit="return validate(this)" method="post" id="form">
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" id="Person_id" type="id" name = "Person_id" placeholder="Enter member id" required />
                                                 <label for="Person_id">Member_id</label>
@@ -42,20 +42,18 @@
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="email" name = "email" type="name" placeholder="Enter email" required/>
+                                                <input class="form-control" id="email" name = "email" type="phone" placeholder="Enter email" />
                                                 <label for="DOB">Email</label>
+                                                <span></span>
+                                            
                                             </div>
 
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="phone" name= "phone" type="name" placeholder="Enter contact" required/>
-                                                <label for="DOB">Contact details</label>
+                                                <input class="form-control" id="phone" name= "phone" type="phone" placeholder="Enter contact" />
+                                                <label for="DOB">Contact details</labe>
+                                                <span></span>
+                                        
                                             </div>
-
-                                            <form action ="../person_details/upload.php" method="post" enctype="multipart/form-data">
-                                                                    image:
-                                                                    <input type="file" name="fileToUpload" id="fileToUpload" name="submit">
-                                                                     <input type="submit" value="Upload Image" name="submit">
-                                                               </form> 
 
                                             <div>
                                             <input type ="submit" name = "submit" value = "Add member">
@@ -75,3 +73,46 @@
            
     </body>
 </html>
+
+<script type="text/javascript">
+
+var validate = function(form){
+    let email_state, phone_state;
+    let email = document.getElementById("email").value;
+    let contact = document.getElementById("phone").value;
+
+    //var regName = /(^[A-Za-z]{3,16})([ ]{0,1})([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})/;
+    var regEmail = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,10})+$/;
+    //var regPass = /^(?=.[0-9])(?=.[!@#$%^&])[a-zA-Z0-9!@#$%^&]{8,16}$/;
+    var regPhone = /\+?\d{6,15}$/;
+
+    if (!regEmail.test(email)){
+        alert("Please enter your email correctly.");
+        email_state = false;
+        return false;
+    }else{
+        email_state = true;
+    }
+
+    if (!regPhone.test(phone)){
+        alert("Please enter your phone number properly\nPhone numbers can start with a +, and must not have more than 15 digits.\nPlease do not indclude delimeters like - or spaces */.");
+        phone_state = false;
+        return false;
+    }else{
+        phone_state = true;
+    }
+
+
+    let finalSate = email_state && phone_state;
+
+    if (!finalSate){
+        return false
+    }else{
+    localStorage.setItem('email', email);
+    localStorage.setItem('phone', phone);
+  
+}
+
+}
+
+</script>

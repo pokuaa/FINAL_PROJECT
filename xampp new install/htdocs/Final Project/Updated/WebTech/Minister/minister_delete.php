@@ -7,7 +7,7 @@
 		
 		$id = $_GET['id'];
 		
-		
+		//sql query to delete from minister table
 		$sql = "DELETE FROM MINISTER WHERE Person_id='$id'";
 		$res = $connect->query($sql);
 		if($connect->query($sql)){
@@ -22,6 +22,6 @@
 		$_SESSION['error'] = 'Select item to delete first';
 	}
 
-	//header('location: ../Dashboard/layout-static.php');
+
 	
 ?>

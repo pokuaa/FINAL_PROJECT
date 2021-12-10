@@ -13,7 +13,7 @@
     <body>
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html">Membership</a>
+            <a class="navbar-brand ps-3" href="index.html">Employee</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
@@ -21,7 +21,7 @@
                 <div class="input-group">
                  <form method = "POST" action = "reach.php" >
                     <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch"/>
-                    <!-- <input type = "submit" name = "submit" value = "search"> -->
+                    
                     <button class="btn btn-primary" id="btnNavbarSearch" type="button" name = "submit" value = "search"><i class="fas fa-search"></i></button>
                 </div>
             </form>
@@ -104,14 +104,14 @@
                     </div>
                     <div class="sb-sidenav-footer">
                         <div class="small">Logged in as:</div>
-                        Membership
+                        Employee
                     </div>
                 </nav>
             </div>
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Secondary information</h1>
+                        <h1 class="mt-4">Employee information</h1>
                         <ol class="breadcrumb mb-4">                        
                             <div class="box-header with-border">
                                             <a href="../Employee/employee_form.php" data-toggle="modal" class="btn btn-primary btn-sm btn-flat"><i class="fa fa-plus"></i> New</a>
@@ -179,8 +179,8 @@
                                                         <td><?php echo $row['employment_date']; ?></td>
                                                        
                                                         <td>
-                                                            <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i><a href="../Employee/employee_edit_form.php?id=<?php echo $row['Person_id']?>"> Edit</a></button>                                                       
-                                                            <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i><a href="../Employee/employee_delete.php?id=<?php echo $row['Person_id']?>"> Delete</a></button>
+                                                            <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i><a style="color: white;" href="../Employee/employee_edit_form.php?id=<?php echo $row['Person_id']?>"> Edit</a></button>                                                       
+                                                            <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i><a style="color: white;"href="../Employee/employee_delete.php?id=<?php echo $row['Person_id']?>"> Delete</a></button>
                                                         </td>
                                                         </tr>
                                                     <?php
@@ -229,6 +229,7 @@
                                     return $(this).text();
 
                                     });
+                                });
                                 
                                 </script>
 

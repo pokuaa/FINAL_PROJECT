@@ -153,6 +153,8 @@
 
 
                                     ?>
+
+                                    //php code to select all elements from education table
                                     <div class="row">
                                         <div class="col-xs-12">
                                         <div class="box">
@@ -169,7 +171,10 @@
                                                 <th>employer</th>
                                                 </thead>
                                                 <tbody>
+                                                     
                                                 <?php
+                                                
+                                                
                                                     $sql = "SELECT * FROM Education";
                                                     $query = mysqli_query($connect,$sql);
                                                     ?>
@@ -187,9 +192,8 @@
                                                         <td><?php echo $row['employment_status']; ?></td>
                                                         <td><?php echo $row['employer']; ?></td>
                                                         <td>
-                                                        <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i><a href="../Education/education_edit_form.php?id=<?php echo $row['Person_id']?>"> Edit</a></button>
-                                                            <!-- <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i> Delete</button> -->
-                                                            <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i><a href="../Education/edu_delete.php?id=<?php echo $row['Person_id']?>"> Delete</a></button>
+                                                        <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i><a style="color: white;" href="../Education/education_edit_form.php?id=<?php echo $row['Person_id']?>"> Edit</a></button>
+                                                        <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i><a style="color: white;" href="../Education/edu_delete.php?id=<?php echo $row['Person_id']?>"> Delete</a></button>
                                                         </td>
                                                         </tr>
                                                     <?php
@@ -238,14 +242,8 @@
                                     return $(this).text();
 
                                     });
-                                //     console.log(data);
-
-                                //     $('#update_id').val(data[0]);
-                                //     $('#edit_blood_group').val(data[1]);
-                                //     $('#edit_blood_cell').val(data[2]);
-                                //     $('#edit_blood_description').val(data[3]);
-                                // });
                                 });
+                               
                                 </script>
 
 

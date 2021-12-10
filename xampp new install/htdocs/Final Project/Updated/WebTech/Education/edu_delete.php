@@ -3,8 +3,8 @@
     //include 'person_details/session.php';
 
 
+	//Delete from the Education table
 	if(isset($_GET['id'])){
-		
 		$id = $_GET['id'];
 		
 		
@@ -22,6 +22,6 @@
 		$_SESSION['error'] = 'Select item to delete first';
 	}
 
-	//header('location: ../Dashboard/layout-static.php');
+
 	
 ?>

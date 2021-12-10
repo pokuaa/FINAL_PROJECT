@@ -184,17 +184,14 @@
                                                         <td><?php echo $row['email']; ?></td>
                                                         <td><?php echo $row['phone']; ?></td>
 
+                                                        
+
                                                      
                                                         <td>
-                                                            <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i><a href="../person_details/Person_edit_form.php?id=<?php echo $row['Person_id']?>"> Edit</a></button>
-                                                            <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i><a href="../person_details/Person_delete.php?id=<?php echo $row['Person_id']?>"> Delete</a></button>
+                                                            <button class="btn btn-success edit btn-sm btn-flat"><i class="fa fa-edit"></i><a style="color: white;" href="../person_details/Person_edit_form.php?id=<?php echo $row['Person_id']?>"> Edit</a></button>
+                                                            <button class="btn btn-danger delete btn-sm btn-flat"><i class="fa fa-trash"></i><a style="color: white;" href="../person_details/Person_delete.php?id=<?php echo $row['Person_id']?>"> Delete</a></button>
                                                        
-<!-- 
-                                                               <form action="../person_details/upload.php" method="post" enctype="multipart/form-data">
-                                                                    image:
-                                                                    <input type="file" name="fileToUpload" id="fileToUpload">
-                                                                    <input type="submit" value="Upload Image" name="submit">
-                                                               </form> -->
+
                                                         
                                                         </td>
                                                         </td>
@@ -245,13 +242,7 @@
                                     return $(this).text();
 
                                     });
-                                //     console.log(data);
-
-                                //     $('#update_id').val(data[0]);
-                                //     $('#edit_blood_group').val(data[1]);
-                                //     $('#edit_blood_cell').val(data[2]);
-                                //     $('#edit_blood_description').val(data[3]);
-                                // });
+                                
                                 });
                                 </script>
 

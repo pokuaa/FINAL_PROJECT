@@ -10,12 +10,10 @@
 		$employment_date = $_POST['employment_date'];
         
 
+		//sql query to update Employee table
 		$sql = "UPDATE Employee SET salary = '$salary', employment_date = '$employment_date' where Person_id = '$Person_id' ";
 
-		
-
-
-		if($connect->query($sql)){
+			if($connect->query($sql)){
 			$_SESSION['success'] = 'Employee updated successfully';
 			header('Location: ../Dashboard/employee.php');
 		}
